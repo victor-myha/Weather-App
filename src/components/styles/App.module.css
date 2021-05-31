@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.Cities{
+    border: 1px solid #898484 ;
+}
+.cityItem{
+    border-bottom: 1px solid #898484 ;
+    cursor: pointer;
+}
