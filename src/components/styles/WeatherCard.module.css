@@ -1,0 +1,26 @@
+.dateWrap{
+    width: 50px;
+    text-align: center;
+}
+.weatherCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    margin: 20px 20px;
+    padding: 10px;
+  }
+.WeatherImgWrap{
+    width: 60px;
+}
+.WeatherImgWrap img{
+    max-width: 100%;
+}
+.DegreeWrap{
+    width:100px;
+}
+.shortForecastWrap{
+    width:265px;
+}

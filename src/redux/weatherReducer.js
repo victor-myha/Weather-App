@@ -51,7 +51,12 @@ const weatherReducer = (state = initialState ,action) => {
 export const getCitiesTC = (city) => {
   return async (dispatch) =>{
        let citiesArr = await API.getCities(city);
-         dispatch({type:"SET_CITIES", citiesArr});
+         if (citiesArr.length === 0) {
+          alert("Error, the location you were looking for was not found :(") 
+         }
+         else{
+          dispatch({type:"SET_CITIES", citiesArr}); 
+         }
     }
 }
 export const getWeatherTC = (LocationKey) => {

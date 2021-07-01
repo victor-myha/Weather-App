@@ -1,7 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { API } from '../api/api';
-import {getCitiesTC, getWeatherTC} from '../redux/weatherReducer';
+import {getWeatherTC} from '../redux/weatherReducer';
+import s from './styles/MainContent.module.css';
+import WeatherCard from './WeatherCard';
 
 class MainContent extends React.Component {
     constructor(props) {
@@ -21,17 +22,14 @@ class MainContent extends React.Component {
         
     }
     render(){
-        return(
-            <div>
+        return(<div className={s.weatherInfoWrapper}>
+            <div className={s.weatherInfo}>
                 {this.props.weatherInfo.map((w)=>{
-                    return <div>
-                        <p>{w.Date}</p>
-                        <p>{`${w.Temperature.Minimum.Value}F - ${w.Temperature.Maximum.Value}F`}</p>
-                        <p>{`Day: ${w.Day.IconPhrase}`}</p>
-                        <p>{`Night: ${w.Night.IconPhrase}`}</p>
-                    </div>
+                    return <WeatherCard w={w}/>
                 })}
             </div>
+        </div>
+            
         )
     }
 }

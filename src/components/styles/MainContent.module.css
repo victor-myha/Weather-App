@@ -1,0 +1,12 @@
+/* .weatherInfo{
+ 
+} */
+.weatherInfoWrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:50px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,65 @@
+  .Cities{
+    border: 1px solid #285A84 ;
+    background-color: #E8F0FE;
+    padding: 2px;
+}
+.CitiesClose{
+  display: none;
+}
+.cityItem{
+    border-bottom: 1px solid #898484 ;
+    cursor: pointer;
+}
+.cityItem:hover{
+  background-color: #C6E4BC;
+  cursor: pointer;
+}
+  input {
+    display:block;
+    width:100%;
+    padding:10px;
+  }
+  .MainInput{
+    display: flex;
+  }
+  
+  .SearchInput {
+    width:500px;
+    border-top-left-radius: 0.3rem;
+    border-color:#eee ;
+    border-bottom-left-radius: 0.3rem;
+  }
+  .SearchInput:hover {
+    border: 1px solid #aaa;
+  }
+  .SearchArea{
+    display: flex;
+    flex-direction: column;
+  }
+  .SubmitSearch {
+    /* remove default behavior */
+    appearance:none;
+    -webkit-appearance:none;
+    /* usual styles */
+    padding:10px;
+    border-top-right-radius: 0.3rem;
+    border-color:#eee ;
+    border-bottom-right-radius: 0.3rem;
+    background-color:#c8cbdd;
+    color:#fff;
+    font-weight:600;
+    width:75px;
+    height: 39px;
+   
+  }
+  .SubmitSearch img{
+    max-width: 50%;
+  }
+  .SubmitSearch:hover {
+    border: 1px solid #aaa;
+    background-color:#b1b8db;
+    cursor: pointer;
+  }
+  .MainText{
+    margin-top: 50px;
+  }
